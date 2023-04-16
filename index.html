@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajasthan Excise | Wine Alcohol Price List</title>
+</head>
+<body>
+    <h1>Price list of different alcohols.</h1>
+    <div class="search-box">
+        <p>Instant Search</p>
+        <input type="search" id="text-search" />
+    </div>
+    <div id="price_list">
+    </div>
+    <script src="./script.js" defer ></script>
+    <style>
+        .search-box {
+            display: flex;
+            width: 100%;
+
+            gap:2rem;
+
+            align-items: center;
+        }
+        #price_list {
+            display: flex;
+            flex-flow:column;
+            gap:10px;
+        }
+        .card-wrapper {
+            padding:1rem;
+            display: flex;
+            flex-flow: row wrap;
+
+            border:1px solid #dadada;
+            border-radius: 5px;
+        }
+
+        .card-wrapper .product-name {
+            display: flex;
+            flex-flow: row nowrap;
+            flex-grow: 1;
+
+            align-items: center;
+            font-size: 1.5em;
+        }
+
+        .product-pricing {
+            display: flex;
+            flex-flow: row nowrap;
+            gap:10px;
+        }
+
+        .product-pricing .size-box {
+            display: flex;
+            flex-flow: column;
+            place-content: center;
+            text-align: center;
+
+            width:100px;
+            background-color: #dadada;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+
+    </style>
+</body>
+</html>
